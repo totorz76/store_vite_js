@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "montserrat";
+    src: url("../assets/font/montserrat/Montserrat-Regular.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+}
+a, li{
+    list-style: none;
+    text-decoration: none;
+}
+input,img {
+    width: 100%;
+}
+/* navbar */
+#mobileNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+    #logo{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    #navIcon{
+        display: none;
+    }
+}
+#navInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: grey;
+    #navIcon{
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+    }
+    #result{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+/* Hero */
+#hero {
+    background-image: url(../assets/img/jeans.jpg);
+    width: 94%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    margin: 0 auto;
+    color: #fff;;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    h1{
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+    button{
+        padding: 1rem;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        margin-bottom: 2rem;
+    }
+}
+/* items */
+#itemContainer{
+    width: 94%;
+    margin: 0 auto;
+}
+/* subscribe */
+#subscribe {
+    width: 94%;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        padding: 1rem;
+        margin-bottom: .5rem;
+    }
+    button{
+        padding: 1rem;
+        border: none;
+        background-color: red;
+        color: #fff;
+        cursor: pointer;
+        align-self: flex-start;
+    }
+}
+/* Contact */
+#contact {
+    width: 94%;
+    margin: 0 auto;
+    background-color: lightgray;
+    color: grey;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        align-self: center;
+    }
+    p{
+        margin-bottom: 2rem;
+        align-self: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    input{
+        padding: .5rem;
+        margin-bottom: .7rem;
+        font-size: 1rem;
+    }
+    button{
+        padding: 1rem;
+        border: none;
+        background-color: black;
+        color: #fff;
+        cursor: pointer;;
+    }
+}
+  /*Storeinfo  */
+  #info{
+    padding: 0 1rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 2rem;
+    h2{
+        color: grey;
+        font-size: 1.7rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+        align-self: center;
+    }
+    #about {
+        p{
+            margin-bottom: 1rem;
+            color:#000;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    #storeInfo{
+        p{
+            margin-bottom: .4rem;
+        }
+    }
+    .storeinfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+  }
+  /* footer */
+  footer{
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
