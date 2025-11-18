@@ -16,6 +16,9 @@ input,img {
     width: 100%;
 }
 /* navbar */
+#desktopNav{
+    display: none;
+}
 #mobileNav {
     display: flex;
     justify-content: space-between;
@@ -23,12 +26,13 @@ input,img {
     padding: 1rem;
     background-color: #000;
     color: #fff;
-    #logo{
+    .logo{
         font-size: 2rem;
         font-weight: 600;
     }
-    #navIcon{
-        display: none;
+    #burger{
+        font-size: 1rem;
+        cursor: pointer;
     }
 }
 #navInfo {
@@ -84,7 +88,18 @@ input,img {
 #itemContainer{
     width: 94%;
     margin: 0 auto;
+    #result{
+        color: rgb(197, 192, 192);
+        padding: 1rem 0;
+        font-size: 1.2rem;
+    }
 }
+#items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /* subscribe */
 #subscribe {
     width: 94%;
@@ -128,14 +143,18 @@ input,img {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    h2{
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        align-self: center;
-    }
-    p{
-        margin-bottom: 2rem;
-        align-self: center;
+    #formulaire{
+        display: flex;
+        flex-direction: column;
+        h2{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            align-self: center;
+        }
+        p{
+            margin-bottom: 2rem;
+            align-self: center;
+        }
     }
     form{
         display: flex;
@@ -198,3 +217,70 @@ input,img {
     padding: 1rem;
     text-align: center;
   }
+@media screen and (min-width: 576px) {
+    #mobileNav{
+        display: none;
+    }
+    #navInfo{
+        width: 70%;
+        margin: 0 auto;
+        margin-right: 4rem;
+    }
+    #hero{
+        width: 70%;
+        height: 65vh;
+        margin-right: 4rem;
+    }
+    #itemContainer{
+        width: 70%;
+        margin-right: 4rem;
+    }
+    #subscribe{
+        width: 70%;
+        margin-right: 4rem;
+    }
+    #contact{
+        width: 70%;
+        margin-right: 4rem;
+        justify-content: space-between;
+    }
+    #info{
+        width: 52%;
+        padding-top: unset;
+    }
+    #contact{
+        width: 70%;
+        margin-right: 4rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        #formulaire{
+            width: 35%;
+            h2{
+                font-size: 1.7rem;
+            }
+            p{
+                margin-bottom: .5rem;
+            }
+        }
+    }
+    #desktopNav{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: 100vh;
+        text-align: center;
+        color: #000;
+        z-index: 1;
+        p{
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+        li{
+            font-size: 1rem;
+            padding: .5rem;
+            cursor: pointer;
+        }
+    }
+}
